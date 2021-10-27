@@ -1,0 +1,2 @@
+Run following command to start execution
+robot -i bnb Testcases/*.robot 
