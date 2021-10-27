@@ -149,17 +149,17 @@ Select_Duration_of_Stay
      FOR    ${INDEX}    IN RANGE    20
         ${Month}=   Run Keyword And Return Status   page should contain element  xpath=//*[@text='${Month_Year}']
         Run Keyword If    ${Month} == True     Exit For Loop
-        Run Keyword If    ${Month} == False    Swipe By Percent    50    60   50   30    200
+        Run Keyword If    ${Month} == False    Swipe By Percent    50    60   50   30    500
      END
-     swipe By Percent    50    60   50   50    200
+     swipe By Percent    50    60   50   30
      Wait Until Page Contains Element     xpath=//*[contains(@content-desc,'${Mon} ${Start_date}')]    10
      click element   xpath=//*[contains(@content-desc,'${Mon} ${Start_date}')]
      FOR    ${INDEX}    IN RANGE    10
-        ${Month}=   Run Keyword And Return Status   page should contain element    xpath=//*[contains(@content-desc,'${Mon} ${End_date}')]
+        ${Month}=   Run Keyword And Return Status   page should contain element    xpath=//*[contains(@content-desc,'${Mon} 28')]
         Run Keyword If    ${Month} == True     Exit For Loop
-        Run Keyword If    ${Month} == False    Swipe By Percent    50    60   50   30   200
+        Run Keyword If    ${Month} == False    Swipe By Percent    50    60   50   30    500
      END
-     swipe By Percent    50    60   50  50    200
+     swipe By Percent    50    60   50  30
      Wait Until Page Contains Element    xpath=//*[contains(@content-desc,'${Mon} ${End_date}')]    10
      click element  xpath=//*[contains(@content-desc,'${Mon} ${End_date}')]
      Wait Until Page Contains Element    ${Next}
