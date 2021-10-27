@@ -1,0 +1,19 @@
+*** Variables ***
+#***********************************************************Desired capabilities***************************************
+
+${serverUrl}                    http://localhost:4723/wd/hub
+${aliasName}                    UserA
+#${udid}                        TRJDU19330000863               #Autopickup code has been implemented
+${deviceName}                   Samsung Galaxy M30
+${platformName}                 Android
+${appPackage}                   com.airbnb.android                            #jp.co.rakuten.mobile.rcs    # com.mavenir.ims
+${appActivity}                  com.airbnb.android.feat.homescreen.HomeActivity    # jp.co.rakuten.mobile.rcs.main.launcher.LauncherActivity
+${NCTimeout}                    120
+${BundleName}                   com.mavenir.connect
+${noReset}                      False
+${appPath}                      ${EXECDIR}/BNB_Data/APK/com.airbnb.android_21.42.apk
+${accessKey}                    eyJ4cC51Ijo4LCJ4                                          # Access Key for SeeTest  (Not using in PCS)
+${automationName}               UiAutomator2
+${unicodeKeyboard}              true                                                      # allows the text to be passed as ASCII text between Appium and the application being tested
+${appWaitDuration}              50000
+

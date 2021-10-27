@@ -1,0 +1,38 @@
+*** Variables ***
+
+
+${Google}                    xpath=//*[@text='Continue with Google']
+${Choose_account_Page}       xpath=//*[@text='Choose an account']
+${Add_info_Page}             xpath=//*[@text='Add your info']
+${Google_Account}            xpath=//*[@resource-id='com.google.android.gms:id/account_name'][1]
+${Info}                      id=2131428761
+${Set_Birthday_Page}         xpath=//*[@text='Set your birth date']
+${Date_Picker}               xpath=//*[@resource-id='android:id/numberpicker_input']
+${OK}                        xpath=//*[@text='OK']
+${AGREE}                     xpath=//*[@text='Agree and continue']
+${Commit}                    xpath=//*[@text='Commit to our community']
+${BNBSearch}                 xpath=//*[@text='Where are you going?']
+${ProfileOption}             xpath=//*[@text='Profile']
+${ProfileName}               id=2131432401
+${LogoutOption}              id=2131431179
+${LogoutProfile}             id=2131429648
+${Searching}                 id=2131430725
+${First_result}              id=title
+${View_profile}              xpath=//*[@text='View profile']
+${BNBLogout}                 xpath=//*[@text='Log out']
+${Place_to_Stay}             xpath=//*[@text='Find a place to stay']
+${Calendar}                  xpath=//*[@text='When will you be there?']
+${Next}                      xpath=//*[@text='Next']
+${Person_count}              id=2131432667
+${Minus}                     id=2131430458
+${Plus}                      id=2131431110
+${SearchComing}              xpath=//*[@text='Search']
+${ResultStay}                id=2131430738
+${Wishlistplace}             id=2131430906
+${SaveToWishlist}            xpath=//*[contains(@content-desc,'Save to wishlist')]
+${WishlistnamePage}          xpath=//*[@text='Name this wishlist']
+${CreateNewwishlist}         xpath=//*[@text='Create new wishlist']
+${Wishlistname}              id=2131428761
+${BNBCreate}                 xpath=//*[@text='Create']
+${Wishlists}                 xpath=//*[@text='Wishlists']
+${Wishlistedname}            id=wishlist_row_title
